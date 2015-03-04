@@ -82,7 +82,7 @@ module Couchbase
                 when :sequential
                   (1..count).map{ next_seq }
                 else
-                  raise ArgumentError, "Unknown algorithm #{algo}. Should be one :sequential, :random or :utc_random"
+                  raise ArgumentError, "Unknown algorithm #{algorithm}. Should be one :sequential, :random or :utc_random"
                 end
         uuids.size == 1 ? uuids[0] : uuids
       end
